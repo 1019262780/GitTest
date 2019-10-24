@@ -1,0 +1,56 @@
+.layout_horizontal {
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: row;
+}
+
+/*纵向布局  */
+
+.layout_vertical {
+  height: 100rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: column;
+}
+
+.right {
+  position: absolute;
+  right: 5%;
+  opacity: 0.5;
+  margin-top: -22px
+}
+
+.list {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-bottom: 25rpx;
+  margin-top: 25rpx;
+}
+.lis {
+  border-bottom: 10px solid #e5e5e5;
+}
+.size{
+  font-size: 16px
+}
+.btn {
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.btn::after {
+  border: none;
+}
+button{
+  height: 40px
+}
+.size1{
+  font-size: 16px;
+  margin-top: -10px;
+  margin-left: -12px
+}
+.right1{
+  position: absolute;
+  right: 5%;
+  top: 0px;
+  opacity: 0.5
+}

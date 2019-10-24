@@ -1,0 +1,49 @@
+.content{
+  width: 100%;
+  background-color: #f0f0f0;
+}
+page{
+  background: #f0f0f0;
+}
+.hr{
+  background-color: #f0f0f0;
+  height: 3px;
+}
+.list{
+   width: 98%;
+  height: 60px;
+  line-height: 60px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.list view:nth-child(1){
+  padding-left: 20px;
+}
+.right .star {
+  float: left;
+  width: 30px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+.star image{
+  width: 25px;
+  height: 25px;
+  margin-top: 17px;
+}
+.otherComments{
+  width: 98%;
+  background-color: white;
+  margin:0 auto;
+}
+.otherComments textarea{
+  padding: 20px;
+}
+button{
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+}

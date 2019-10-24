@@ -1,0 +1,26 @@
+<template name="i-event">
+  <view class="list">
+    <view class="layout_horizontal">
+      <view>
+        <image src="{{img}}" class="list_pic"></image>
+      </view>
+      <view>
+        <view class="list-title">{{title}}</view>
+        <view class="list-tip">{{tip}}</view>
+        <view class="layout_horizontal">
+          <view>
+            <image src="../../images/icon/list_icon1.png" class="list_icon1"></image>
+          </view>
+          <view class="list-place">{{place}}</view>
+        </view>
+        <view class="layout_horizontal">
+          <view>
+            <image src="../../images/icon/list_icon2.png" class="list_icon2"></image>
+          </view>
+          <view class="list-grade">
+            {{grade}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

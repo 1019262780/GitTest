@@ -1,0 +1,47 @@
+.list {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-bottom: 25rpx;
+  margin-top: 20px;
+}
+page{
+  background: #f7faed
+}
+.back{
+  background: blue;
+  opacity: 0.7;
+  height: 30px;
+  border-top-left-radius:4px;
+  border-top-right-radius: 4px; 
+}
+.backg{
+  background: #fff;
+  height: 80px;
+  border: 1px solid #f7faed;
+}
+.layout_horizontal {
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: row;
+}
+.col{
+  color: white;
+  font-size: 14px;
+  margin-left: 5%;
+  margin-top: 5px
+}
+.rig{
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  right: 10%;
+  margin-top: 5px
+}
+.wei{
+  font-weight: bold;
+  margin: 3px
+}
+.font{
+  text-indent: 2em;
+  margin-top: 3px;
+}

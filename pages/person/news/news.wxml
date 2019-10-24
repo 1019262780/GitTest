@@ -1,0 +1,12 @@
+<view class="hr"></view>
+<view class="list">
+<view>
+  <view class="layout_horizontal">
+    <view>收到消息给我发服务消息</view>
+    <view class="posi">
+      <switch type="switch" checked />
+    </view>
+  </view>
+</view>
+</view>
+<view class="hr"></view>

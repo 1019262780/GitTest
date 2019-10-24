@@ -1,0 +1,65 @@
+<form bindsubmit='submitForm'>
+<view class="header">编辑资料</view>
+<view class="hr"></view>
+<view class="row">
+  <view class="section__title">姓名</view>
+  <input type="text" name="name" class="input"  placeholder="请输入姓名"value='{{name}}'></input>
+</view>
+<view class="hr"></view>
+<view class="row">
+  <view class="section__title">昵称</view>
+  <input type="text" name="userName1"class="input"   placeholder="请输入昵称"value='{{userName1}}'>
+</input>
+</view>
+<view class="hr"></view>
+<view class="row">
+  <view class="section__title">性别</view>
+  <picker bindchange="bindPickerChange"name="index"  value="{{index}}" range="{{array}}">
+    <view class="input">
+      {{array[index]}}
+    </view>
+  </picker>
+</view>
+<view class="hr"></view>
+<view class="hr1"></view>
+<view class="row">
+  <view class="section__title">学校</view>
+  <picker bindchange="bindSchoolChange"  name="school"value="{{school}}" range="{{array1}}">
+    <view class="input">
+      {{array1[school]}}
+    </view>
+  </picker>
+</view>
+<view class="hr2"></view>
+<view class="row">
+  <view class="section__title">生日</view>
+  <picker mode="date" value="{{date}}" name="date"
+  start="1900-01-01" end="2025-01-01" bindchange="bindDateChange">
+    <view class="input">
+      {{date}}
+    </view>
+  </picker>
+</view>
+<view class="hr"></view>
+<view class="row">
+  <view class="section__title">星座</view>
+  <picker bindchange="bindConsteChange"  name="conste"value="{{conste}}" range="{{arr}}">
+    <view class="input">
+      {{arr[conste]}}
+    </view>
+  </picker>
+</view>
+<view class="hr"></view>
+<view class="hr1"></view>
+<view class="row">
+  <view class="section__title">地区</view>
+  <picker mode="region" bindchange="bindRegionChange" name="region" value="{{region}}" custom-item="{{customItem}}">
+    <view class="input">
+      {{region[0]}} {{region[1]}} {{region[2]}}
+    </view>
+  </picker>
+</view>
+
+<view class="hr1"></view>
+<button type="primary"  type='{{btnstate}}' form-type="submit">保存</button>
+</form>

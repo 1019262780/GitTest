@@ -1,0 +1,10 @@
+<view class="list">
+<view class="back">
+<view class="layout_horizontal">
+<view class="col">版本：正式版v1.0</view><view class="rig">2019-08-30</view> </view>
+</view>
+<view class="backg">
+<view class="wei">上线：</view>
+<view class="font">主体功能完成。</view>
+</view>
+</view>

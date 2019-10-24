@@ -1,0 +1,21 @@
+<template name="history-t">
+
+  <navigator url="../news-three/news-three?id={{id}}">
+    <view class="list" type="primary" bindtap="news_thbtn">
+      <view class="layout_horizontal">
+        <view>
+          <view class="list-title">{{title}}
+            <image src="{{image}}" class="list_hot"></image>
+          </view>
+          <view class="layout_horizontal">
+            <view class="list-browse">{{browse}}浏览</view>
+            <view class="list-date">{{publish_time}}</view>
+          </view>
+        </view>
+        <view>
+          <image src="{{img}}" class="list_pic"></image>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</template>

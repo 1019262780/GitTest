@@ -1,0 +1,27 @@
+<view bindtap="navigateBack">
+<block  wx:for="{{newsthreeList}}" wx:for-item="item" wx:for-index="idx" wx:key="*this" data-goodsid="{{item.id}}">
+    
+  <image src="{{item.image_list}}" class="newbanner"></image>
+  <view class="content">
+  <view class="layout_horizontal">
+    <image src="../../images/comment/news_lo.png" class="news_lo"></image>
+    <view class="th_date">{{item.publish_time}}</view>
+  </view>
+  <view class="th_title">
+  {{item.title}}
+  </view>
+
+  <view class="th_content">
+  {{item.content}}
+  </view>
+  
+  </view>
+
+     </block>
+
+  <view class="layout_horizontal nothing_bot">
+            <view class="nothing_line"></view>
+            <view class="">no content in the next</view>
+            <view class="nothing_line"></view>        
+      </view>
+</view>

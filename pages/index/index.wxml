@@ -1,0 +1,141 @@
+<!-- pages/index/index -->
+<import src="i-event/i-event.wxml" />
+<button open-type='getUserInfo' bindgetuserinfo='getuserinfo' class='sz_btn' type='primary' />
+<view class='e-container'>
+  <view class='back'>
+    <view class="header">
+      <image src="http://106.12.109.65/yousai_img/new.png" class="new"></image>
+      <view class="headertext">
+        <text>优赛</text>
+      </view>
+       <import src="../../components/filterbar/filterbar.wxml" />
+    <!--这里添加模板：横向导航栏  -->
+    <template is="filterbar" data="{{ ...$wux.filterbar }}" /> 
+      <view bindtap="searchtap">
+      <image src="../../images/icon/search.png" class="search"></image>
+      </view>
+    </view>
+    <view class='topTabSwiper'>
+      <view>
+        <image class="tabicon" src="../../images/icon/i_eventbtn.png"></image>
+        <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>赛事推荐</view>
+      </view>
+      <view>
+        <image class="tabicon" src="../../images/icon/i_teammatebtn.png"></image>
+        <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>队友推荐</view>
+      </view>
+      <view>
+        <image class="tabicon" src="../../images/icon/i_livebtn.png"></image>
+        <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}' data-current="2" bindtap='checkCurrent'>赛事直播</view>
+      </view>
+    </view>
+  </view>
+  <swiper current="{{currentData}}" class='swiper' style="height:{{winHeight+1350}}rpx" duration="300" bindchange="bindChange">
+    <!-- 赛事推荐 -->
+    <swiper-item>
+      <view class='swiper_con'>
+        <!-- 轮播 -->
+        <swiper class="swiper-small" indicator-dots="true" autoplay="true" interval="5000" duration="1000" indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}">
+          <block wx:for="{{movies}}" wx:for-index="index" wx:key="*">
+            <swiper-item>
+              <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+            </swiper-item>
+          </block>
+        </swiper>
+        <!-- 列表 -->
+        <view bindtap="detailsaishi" wx:for="{{postList}}" wx:for-item="item" wx:for-index="index" wx:key="*" data-post-id="{{item.postId}}">
+          <block>
+            <template is="i-event" data="{{...item}}" />
+          </block>
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 队友推荐 -->
+    <swiper-item>
+     
+
+    </swiper-item>
+    <swiper-item>
+      <view class="conter">
+        <view>
+          <image src="http://106.12.109.65/yousai_img/zhibo.png" class="image"></image>
+        </view>
+        <scroll-view class="image-group" scroll-x="true">
+          <image src="http://106.12.109.65/yousai_img/banner%20(1).png"></image>
+          <image src="http://106.12.109.65/yousai_img/banner%20(1).png"></image>
+          <image src="http://106.12.109.65/yousai_img/banner%20(1).png"></image>
+          <image src="http://106.12.109.65/yousai_img/banner%20(1).png"></image>
+        </scroll-view>
+      </view>
+      <view class="bakcg">
+        <view>
+          <image src="http://106.12.109.65/yousai_img/juxing.png" class="image1"></image>
+        </view>
+        <view>
+          <image src="http://106.12.109.65/yousai_img/xin%20(2).png" class="image2"></image>
+        </view>
+        <view class="tit">推荐直播
+          <image class="image3" src="http://106.12.109.65/yousai_img/xin%20(1).png"></image>
+        </view>
+      </view>
+      <view class="tupian">
+        <view>
+          <image src="http://106.12.109.65/yousai_img/zhibo%20(1).png" class="image41"></image>
+        </view>
+        <view>
+          <image src="http://106.12.109.65/yousai_img/logo%20(3).png" class="img11"></image>
+        </view>
+        <view class="title1">
+          <view>
+            <text>广州运动协会登山比赛</text>
+          </view>
+          <view>
+            <text>7.15 13:00</text>
+          </view>
+        </view>
+        <view>
+          <image src="http://106.12.109.65/yousai_img/zhibo%20(2).png" class="image42"></image>
+        </view>
+        <view>
+          <image src="http://106.12.109.65/yousai_img/logo%20(4).png" class="img12"></image>
+        </view>
+        <view class="title2">
+          <view>
+            <text>运动协会登山比赛</text>
+          </view>
+          <view>
+            <text>7.15 13:00</text>
+          </view>
+        </view>
+        <view>
+          <image src="http://106.12.109.65/yousai_img/zhibo%20(3).png" class="image43"></image>
+        </view>
+        <view>
+          <image src="http://106.12.109.65/yousai_img/logo%20(2).png" class="img13"></image>
+        </view>
+        <view class="title3">
+          <view>
+            <text>创意比赛</text>
+          </view>
+          <view>
+            <text>7.15 13:00</text>
+          </view>
+        </view>
+        <view>
+          <image src="http://106.12.109.65/yousai_img/zhibo%20(4).png" class="image44"></image>
+        </view>
+        <view>
+          <image src="http://106.12.109.65/yousai_img/logo%20(1).png" class="img14"></image>
+        </view>
+        <view class="title4">
+          <view>
+            <text>广东拟想插画比赛</text>
+          </view>
+          <view>
+            <text>7.15 13:00</text>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  </view>

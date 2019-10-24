@@ -1,0 +1,41 @@
+<view class='page-box'>
+  <view class='header-box'>
+    <view class='search-box'>
+      <image src='../../../images/icon/search.png'></image>
+      <input placeholder='搜索' placeholder-class='placeholder-class'
+      focus='true' bindfocus='showHistory' bindinput='searchInput'
+      value='{{searchContent}}'></input>
+    </view>
+    <text bindtap='search'>搜索</text>
+  </view>
+  <view class='history-box' wx:if="{{showHistory}}">
+    <view class='history-text'>
+      <text class='history-text-left'>历史记录</text>
+      <text class='history-text-right' bindtap='clearHistory'>清空历史记录</text>
+    </view>
+    <view class='history-list' >
+      <view class='row-box' wx:for="{{historyList}}" wx:key="historyid">
+        <view bindtap='bindSearchHistory' data-history='{{item}}'>{{item}} </view>
+      </view>
+    </view>
+  </view>
+  <view class='search-result-box' wx:if="{{!showHistory}}" >
+    <block wx:if="{{searchList.length > 0 ? true : false}}" wx:for="{{searchList}}" wx:key="product_id">
+      <view class='single-result-box' bindtap='detail' data-share-id="{{item.shareId}}" >
+        
+        <view class='container-box'>
+          <view class='text'>
+            <view class='name'>{{item.title}}</view>
+            <view class='desc'>{{item.description}}</view>
+          </view>
+          <view class='recommend' catchtap='recommend' data-share-id="{{item.shareId}}">
+            <text>推荐</text>
+          </view>
+          
+        </view>
+      </view>
+    </block>
+    
+    <view class="none-product" wx:if="{{searchList.length == 0 ? true : false}}">无搜索记录</view>
+  </view>
+</view>

@@ -1,0 +1,91 @@
+<view>
+  <view class="p_back">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="nothing">
+        <image src="../../images/nothing.png" class="nothing_pic"></image>
+      </button>
+      <view class="layout_horizontal">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view class="userinfo-nickname">
+          <view>
+            <text>{{userInfo.nickName}}</text>
+          </view>
+          <view class="major">
+            <text>{{dataFromB}}</text>
+          </view>
+        </view>
+        <view class="btn_in" bindtap="ziliaoTap">></view>
+      </view>
+      <view class="layout_horizontal">
+        <view class="fen_t">0粉丝 | 0关注 | 0组队</view>
+        <view class="g_come">0来访</view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="per_content">
+    <view class="layout_horizontal per_conbot">
+      <image src="../../images/icon/per_1.png" class="per_btn"></image>
+      <view class="layout_horizontal per_line">
+        <view>我的竞赛</view>
+        <view class="per_conbtn">></view>
+      </view>
+    </view>
+
+    <view class="layout_horizontal per_conbot">
+      <image src="../../images/icon/per_2.png" class="per_btn"></image>
+      <view class="layout_horizontal per_line">
+        <view>我的评论</view>
+        <view class="per_conbtn">></view>
+      </view>
+    </view>
+
+    <view class="layout_horizontal per_conbot">
+      <image src="../../images/icon/per_3.png" class="per_btn"></image>
+      <view class="layout_horizontal per_line">
+        <view>我的发表</view>
+        <view class="per_conbtn">></view>
+      </view>
+    </view>
+
+    <view class="layout_horizontal per_conbot">
+      <image src="../../images/icon/per_4.png" class="per_btn"></image>
+      <view class="layout_horizontal per_line">
+        <view>我的队伍</view>
+        <view class="per_conbtn">></view>
+      </view>
+    </view>
+
+    <view class="layout_horizontal per_conbot">
+      <image src="../../images/icon/per_5.png" class="per_btn"></image>
+      <view class="layout_horizontal per_line">
+        <view bindtap="showGrade">我的反馈</view>
+        <view class="per_conbtn">></view>
+      </view>
+    </view>
+
+    <view class="layout_horizontal per_conbot">
+      <image src="../../images/icon/per_5.png" class="per_btn"></image>
+      <view class="layout_horizontal per_line">
+        <view bindtap="showCollected">我的收藏</view>
+        <view class="per_conbtn">></view>
+      </view>
+    </view>
+    <view class="layout_horizontal per_conbot">
+      <image src="../../images/icon/per_6.png" class="per_btn"></image>
+      <view class="layout_horizontal per_line">
+        <view bindtap="showSetting">我的设置</view>
+        <view class="per_conbtn">></view>
+      </view>
+    </view>
+
+  </view>
+
+
+  <view class="layout_horizontal nothing_bot">
+    <view class="nothing_line"></view>
+    <view class="">no content in the next</view>
+    <view class="nothing_line"></view>
+  </view>
+</view>

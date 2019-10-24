@@ -1,0 +1,137 @@
+<view class="comment-detail-box">
+  <view class="comment-main-box">
+    <view class="list">
+      <view class="layout_vertical">
+        <view class="layout_horizontal">
+          <view>
+            <image src="{{item.image}}" class="list_icon1"></image>
+          </view>
+          <view class="layout_vertical">
+            <view class="list-title">{{item.title}}</view>
+            <view class="list-title1">{{item.tip}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="list">
+      <view class="list-back">
+        <view class="list1">
+          <view class="layout_horizontal">
+            <view class="list-title2">主办方</view>
+            <view class="list-title3">
+              <text>{{item.zhu}}</text>
+              <view class="hr1"></view>
+            </view>
+          </view>
+        </view>
+        <view class="list1">
+          <view class="layout_horizontal">
+            <view class="list-title2">竞赛级别</view>
+            <view class="list-title3">{{item.grade}}
+              <view class="hr1"></view>
+            </view>
+          </view>
+        </view>
+        <view class="list1">
+          <view class="layout_horizontal">
+            <view class="list-title2">报名时间</view>
+            <view class="list-title3">{{item.time1}}
+              <view class="hr1"></view>
+            </view>
+          </view>
+        </view>
+        <view class="list1">
+          <view class="layout_horizontal">
+            <view class="list-title2">比赛时间</view>
+            <view class="list-title3">{{item.time2}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="list">
+      <view class="layout_vertical">
+        <view class="list1">
+          <view class="layout_horizontal">
+            <view class="list-title2">竞赛附件</view>
+            <view class="list-title3">({{item.matchCount}})
+              <view class="hr1"></view>
+            </view>
+          </view>
+        </view>
+        <view class="list1">
+          <view class="layout_horizontal">
+            <view class="list-title2">通知公告</view>
+            <view class="list-title3">({{item.noticeCount}})</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="list">
+      <view class="profile">赛事简介</view>
+      <view class="profile-tip">
+        <text>{{item.profile}}</text>
+      </view>
+      <view class="profile">大赛主题</view>
+      <view class="profile-tip">{{item.topic}}</view>
+      <view class="profile">组织机构</view>
+      <view class="list1">
+        <view class="layout_horizontal">
+          <view class="list-title2">主办单位</view>
+          <view class="list-title3">
+            <text>{{item.zhu}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="list1">
+        <view class="layout_horizontal">
+          <view class="list-title2">支持单位</view>
+          <view class="list-title3">
+            <text>{{item.support}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="list1">
+        <view class="layout_horizontal">
+          <view class="list-title2">承办单位</view>
+          <view class="list-title3">
+            <text>{{item.undertake}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="profile">五大赛道</view>
+      <view class="profile-tip">
+        <text>{{item.track}}</text>
+      </view>
+      <view class="profile">参赛项目范围</view>
+      <view class="profile-tip">
+        <text>{{item.limits}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <view class="bottom-content">
+      <view class="list2">
+        <view class='shareicon'>
+          <image src='{{item.image1}}' class="img"></image>
+        </view>
+        <view class='shareicon'>
+          <image src='{{item.image2}}' class="img"></image>
+        </view>
+        <view class='shareicon'>
+          <image src='{{item.image3}}' class="img"></image>
+        </view>
+        <view class='shareicon'>
+          <image src='{{item.image4}}' class="img1"></image>
+          <view class="zudui">组队</view>
+        </view>
+        <view class='shareicon'>
+          <image src='{{item.image5}}' class="img1"></image>
+          <view class="baoming">报名</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

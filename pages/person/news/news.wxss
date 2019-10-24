@@ -1,0 +1,19 @@
+.hr{
+  border-bottom: 10px solid #e5e5e5;
+}
+.layout_horizontal {
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: row;
+}
+.list {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding-bottom: 25rpx;
+  margin-top: 25rpx;
+}
+.posi{
+  position: absolute;
+  right: 5%;
+  top: 15px
+}

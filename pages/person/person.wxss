@@ -1,0 +1,132 @@
+        /*横向布局  */
+    .layout_horizontal{
+      display: flex;
+      /*row 横向  column 列表  */
+      flex-direction: row;
+    }
+
+    /*纵向布局  */
+    .layout_vertical{
+      height: 100rpx;
+      display: flex;
+      /*row 横向  column 列表  */
+      flex-direction: column;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .p_back{
+    padding-left: 16rpx;
+    padding-right: 16rpx;
+    padding-top: 50rpx;
+    background-size:100% 100%;
+    background-image: url("http://106.12.109.65/yousai_img/public.png")
+    }
+
+    /* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+.nothing{
+  width: 164rpx;
+  height: 164rpx;
+   border-radius: 50%;
+   padding: 0;
+   float: left;
+   margin-left: 30rpx
+}
+.nothing_pic{
+ width: 164rpx;
+  height: 164rpx;
+}
+.userinfo-avatar {
+  width: 164rpx;
+  height: 164rpx;
+  margin: 20rpx 20rpx 20rpx 30rpx;
+  border-radius: 50%;
+ 
+}
+.userinfo-nickname{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+ line-height:60rpx;
+  color:#ffffff;
+  margin-left: 10rpx
+}
+.major{
+  font-size: 30rpx;
+}
+.btn_in{
+  position: absolute;
+  right: 5%;
+  font-size: 80rpx;
+  color:#ffffff;
+  top: 8%
+
+}
+.g_come{
+   display: flex;
+    justify-content: flex-end;
+    margin-left: 260rpx;
+    color:#ffffff;
+    margin-top: 80rpx;
+    font-size: 32rpx;
+    margin-bottom:70rpx;
+     padding-left: 50rpx
+}
+.fen_t{
+  color: #ffffff;
+   font-size: 32rpx;
+  margin-top: 80rpx;
+  margin-bottom: 70rpx;
+   padding-left: 20rpx
+}
+
+.per_content{
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  margin-top: -30rpx;
+  background: #ffffff;
+  padding-left: 50rpx;
+  padding-top: 50rpx
+}
+.per_btn{
+  width:72rpx;
+  height: 73rpx
+}
+
+.per_line{
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid #ccc;
+  letter-spacing: 3rpx
+}
+.per_conbtn{
+  margin-left: 350rpx;
+  color:#9E9E9E
+}
+.per_conbot{
+  margin-top: 30rpx
+}
+
+.nothing_bot{
+  color:#EEEEEE;
+  font-size: 23rpx;
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40rpx
+}
+.nothing_line{
+  border-top: 1rpx solid #EEEEEE;
+  width:26%;
+  margin-top: 15rpx;
+  margin-left:20rpx;
+  margin-right: 20rpx
+}

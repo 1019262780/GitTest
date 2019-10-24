@@ -1,0 +1,284 @@
+@import "i-event/ievent.wxss";
+/* pages/filterbar/index.wxss */
+@import '../../components/wuxfilterbar.wxss';  
+.back {
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  padding-bottom: 300rpx;
+  background-size: 100% 100%;
+  margin-bottom: -320rpx;
+  background-image: url("http://106.12.109.65/yousai_img/public.png");
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.header image {
+  height: 25px;
+  width: 25px;
+  margin-top: 10px;
+}
+
+.headertext {
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+.new {
+  position: absolute;
+  left: 20px;
+}
+
+.search {
+  position: absolute;
+  right: 60px;
+    top: 6px;
+}
+
+
+.topTabSwiper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tab {
+  float: left;
+  text-align: center;
+  padding: 10rpx 0;
+  color: #796eab;
+  font-size: 16px;
+  margin-left: 50rpx;
+  letter-spacing: 8rpx;
+  width: 180rpx;
+  margin-top: 10rpx;
+}
+
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.tabBorer {
+  /* background-image: url("http://chuantu.biz/t6/356/1534086863x-1376440198.png");  */
+  border-bottom: 5rpx solid #7493d4;
+  border-radius: 10rpx;
+  color: #fff;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper_con {
+  width: 100%;
+  height: 100%;
+  padding: 80rpx 0;
+}
+
+.tabicon {
+  width: 65rpx;
+  height: 60rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  margin-top: 30rpx;
+  margin-left: 90rpx;
+}
+
+.tabtext {
+  margin-left: 100rpx;
+  letter-spacing: 5rpx;
+}
+
+.swiper-small {
+  text-align: center;
+  height: 400rpx;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 65rpx;
+}
+
+.swiper .slide-image {
+  height: 100%;
+  width: 92%;
+  border-radius: 20rpx;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.image-group {
+  display: flex;
+  white-space: nowrap;
+  margin-top: 40rpx;
+  margin-left: 4%;
+  width: 92%;
+}
+
+.image-group image {
+  display: inline-block;
+  width: 500rpx;
+  height: 250rpx;
+  margin-right: 20rpx;
+  border-radius: 20rpx;
+}
+
+.conter {
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  padding-bottom: 300rpx;
+  background-size: 100% 100%;
+  margin-bottom: -320rpx;
+  margin-top: 13px;
+  background-image: url("http://106.12.109.65/yousai_img/public.png");
+}
+
+.image {
+  width: 150px;
+  height: 20px;
+  margin-left: 6%;
+  margin-top: 30px;
+}
+
+backg {
+  position: relative;
+  width: 100%;
+}
+
+.image1 {
+  position: absolute;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.image2 {
+  position: absolute;
+  width: 120px;
+  height: 10px;
+  margin-top: 50px;
+  margin-left: 33%;
+}
+
+.tit {
+  margin-top: 70px;
+  margin-left: 20px;
+  font-size: 14px;
+  position: absolute;
+}
+
+.image3 {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
+
+.tupian {
+  margin-left: 8%;
+  width: 100%;
+}
+
+.image41 {
+  width: 38%;
+  position: absolute;
+  margin-top: 120px;
+  height: 170px;
+  margin-right: 8%;
+}
+
+.image42 {
+  width: 38%;
+  position: absolute;
+  margin-top: 120px;
+  height: 170px;
+  margin-left: 45%;
+}
+
+.image43 {
+  width: 38%;
+  position: absolute;
+  margin-top: 320px;
+  height: 170px;
+  margin-right: 8%;
+}
+
+.image44 {
+  width: 38%;
+  position: absolute;
+  margin-top: 320px;
+  height: 170px;
+  margin-left: 45%;
+}
+
+.img11 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 5px;
+}
+
+.img12 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 47%;
+}
+
+.img13 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 5px;
+}
+
+.img14 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 47%;
+}
+
+.title1 {
+  position: absolute;
+  margin-top: 250px;
+  font-size: 9px;
+  color: white;
+  margin-left: 33px;
+}
+
+.title2 {
+  position: absolute;
+  margin-top: 250px;
+  font-size: 9px;
+  color: white;
+  margin-left: 55%;
+}
+
+.title3 {
+  position: absolute;
+  margin-top: 450px;
+  font-size: 9px;
+  color: white;
+  margin-left: 33px;
+}
+
+.title4 {
+  position: absolute;
+  margin-top: 450px;
+  font-size: 9px;
+  color: white;
+  margin-left: 55%;
+}

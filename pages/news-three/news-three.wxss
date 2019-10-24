@@ -1,0 +1,63 @@
+.newbanner{
+margin-top:-30px;
+width: 100%
+}
+
+/*横向布局  */
+.layout_horizontal{
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: row;
+}
+
+/*纵向布局  */
+.layout_vertical{
+  height: 100rpx;
+  display: flex;
+  /*row 横向  column 列表  */
+  flex-direction: column;
+}
+
+.news_lo{
+  height:43rpx;
+  width: 159rpx
+}  
+
+.content{
+  margin-left:40rpx;
+  margin-right:40rpx;
+  margin-top: 30rpx
+}
+.th_date{
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  margin-top: 5rpx
+}
+.th_title{
+  margin-top: 35rpx;
+  font-size: 42rpx;
+  font-weight: bold
+}
+
+.th_content{
+  font-size: 35rpx;
+  letter-spacing: 2rpx;
+  margin-top:20rpx;
+  line-height: 65rpx;
+}
+
+.nothing_bot{
+  color:#EEEEEE;
+  font-size: 23rpx;
+  margin-top: 100rpx;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40rpx
+}
+.nothing_line{
+  border-top: 1rpx solid #EEEEEE;
+  width:26%;
+  margin-top: 15rpx;
+  margin-left:20rpx;
+  margin-right: 20rpx
+}

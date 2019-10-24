@@ -1,0 +1,142 @@
+<import src="history-t/history-t.wxml" />
+<import src="follow-n/follow-n.wxml" />
+<!--导航条-->
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="*" bindtap="navbarTap">{{item}}</text>
+</view>
+<!-- 导航内容 -->
+<view hidden="{{currentTab!==0}}">
+  <image src="http://106.12.109.65/yousai_img/newbanner1.png" class="newbanner"></image>
+
+  <block wx:for="{{newsList}}" wx:for-item="item" wx:for-index="idx" wx:key="*" data-goodsid="{{item.id}}">
+    <template is="history-t" data="{{...item}}" />
+  </block>
+</view>
+<view hidden="{{currentTab!==1}}">
+  <image src="http://106.12.109.65/yousai_img/newbanner2.png" class="newbanner"></image>
+  <view wx:for="{{newsFollow}}" wx:for-item="item" wx:for-index="idx" wx:key="*" data-goodsid="{{item.id}}">
+    <view class="list">
+      <view class="layout_horizontal">
+        <view>
+          <view class="list-title">{{item.title}}
+            <image src="{{item.img}}" class="list_hot"></image>
+          </view>
+          <view class="layout_horizontal">
+            <view class="list-browse">{{item.browse}}浏览</view>
+            <view class="list-date">{{item.publish_time}}</view>
+          </view>
+        </view>
+        <view>
+          <image src="{{item.image}}" class="list_pic"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:for="{{newsFollow1}}" wx:for-item="item" wx:for-index="idx" wx:key="*" data-goodsid="{{item.id}}">
+    <view class="list">
+      <view class="layout_vertical1">
+        <view class="list-title">{{item.title}}
+        </view>
+        <view class="layout_horizontal">
+          <view>
+            <image src="{{item.image}}" class="list_pic1"></image>
+            <image src="{{item.image1}}" class="list_pic1"></image>
+            <image src="{{item.image2}}" class="list_pic1"></image>
+          </view>
+        </view>
+        <view class="layout_horizontal">
+          <view class="list-browse">{{item.browse}}浏览</view>
+          <view class="list-date">{{item.publish_time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:for="{{newsFollow2}}" wx:for-item="item" wx:for-index="idx" wx:key="*" data-goodsid="{{item.id}}">
+    <view class="list">
+      <view class="layout_vertical2">
+        <view class="list-title">{{item.title}}</view>
+        <view class="list-title1">{{item.tit}}</view>
+        <view class="layout_horizontal">
+          <view class="list-browse">{{item.browse}}浏览</view>
+          <view class="list-date">{{item.publish_time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:for="{{newsFollow3}}" wx:for-item="item" wx:for-index="idx" wx:key="*" data-goodsid="{{item.id}}">
+    <view class="list">
+      <view class="layout_horizontal">
+        <view>
+          <view class="list-title">{{item.title}}
+            <image src="{{item.img}}" class="list_hot"></image>
+          </view>
+          <view class="layout_horizontal">
+            <view class="list-browse">{{item.browse}}浏览</view>
+            <view class="list-date">{{item.publish_time}}</view>
+          </view>
+        </view>
+        <view>
+          <image src="{{item.image}}" class="list_pic"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view hidden="{{currentTab!==2}}">
+  <image src="http://106.12.109.65/yousai_img/newbanner3.png" class="newbanner"></image>
+</view>
+<view hidden="{{currentTab!==3}}">
+  <image src="http://106.12.109.65/yousai_img/newbanner4.png" class="newbanner"></image>
+  <view wx:for="{{newsFollow1}}" wx:for-item="item" wx:for-index="idx" wx:key="*" data-goodsid="{{item.id}}">
+    <view class="list">
+      <view class="layout_vertical1">
+        <view class="list-title">{{item.title}}
+        </view>
+        <view class="layout_horizontal">
+          <view>
+            <image src="{{item.image}}" class="list_pic1"></image>
+            <image src="{{item.image1}}" class="list_pic1"></image>
+            <image src="{{item.image2}}" class="list_pic1"></image>
+          </view>
+        </view>
+        <view class="layout_horizontal">
+          <view class="list-browse">{{item.browse}}浏览</view>
+          <view class="list-date">{{item.publish_time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:for="{{newsLook}}" wx:for-item="item" wx:for-index="idx" wx:key="*" data-goodsid="{{item.id}}">
+    <view class="list">
+      <view class="list_img1">
+        <image src="{{item.image1}}" class="list_pic2"></image>
+        <view class="title">{{item.title}}</view>
+        <view>
+          <image src="{{item.image3}}" class="look_img1"></image>
+        </view>
+        <view>
+          <image src="{{item.image2}}" class="look_img"></image>
+        </view>
+        <view class="tip">{{item.tip}}</view>
+      </view>
+    </view>
+  </view>
+  <view wx:for="{{newsFollow3}}" wx:for-item="item" wx:for-index="idx" wx:key="*" data-goodsid="{{item.id}}">
+    <view class="list">
+      <view class="layout_horizontal">
+        <view>
+          <view class="list-title">{{item.title}}
+            <image src="{{item.img}}" class="list_hot"></image>
+          </view>
+          <view class="layout_horizontal">
+            <view class="list-browse">{{item.browse}}浏览</view>
+            <view class="list-date">{{item.publish_time}}</view>
+          </view>
+        </view>
+        <view>
+          <image src="{{item.image}}" class="list_pic"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

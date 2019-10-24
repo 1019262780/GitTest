@@ -1,0 +1,57 @@
+
+
+    <!-- <view class="layout_vertical">
+      <view class="list-title">{{title2}}
+        <view class="layout_horizontal">
+          <image src="{{images2}}" class="list_pic1"></image>
+          <image src="{{images22}}" class="list_pic1"></image>
+          <image src="{{images222}}" class="list_pic1"></image>
+        </view>
+      </view>
+    </view>
+    <view class="layout_vertical">
+    <view class="list-title">{{title3}}</view>
+    <view class="">{{tit}}</view>
+   <view class="layout_horizontal">
+          <view class="list-browse"></view>
+          <view class="list-date">{{publish_time1}}</view>
+        </view>
+    </view>
+   <view class="layout_horizontal">
+      <view>
+        <view class="list-title">{{title4}}
+          <image src="{{img1}}" class="list_hot"></image>
+        </view>
+        <view class="layout_horizontal">
+          <view class="list-browse"></view>
+          <view class="list-date">{{publish_time4}}</view>
+        </view>
+      </view>
+      <view>
+        <image src="{{image4}}" class="list_pic"></image>
+      </view>
+    </view> -->
+    <!-- </view> -->
+
+<!-- <view>
+        <view class="list-title">{{title2}}
+          <image src="{{img2}}" class="list_hot"></image>
+        </view>
+      </view>
+      <view class="layout_horizontal">
+        <view>
+          <image src="{{images2}}" class="list_pic1"></image>
+          <image src="{{images22}}" class="list_pic1"></image>
+          <image src="{{images222}}" class="list_pic1"></image>
+        </view>
+      </view>
+      <view class="layout_horizontal">
+        <view class="list-browse"></view>
+        <view class="list-date">{{publish_time2}}</view>
+      </view>
+      <view class="list-title">{{title3}}</view>
+      <view class="">{{tit}}</view>
+      <view class="layout_horizontal">
+        <view class="list-browse"></view>
+        <view class="list-date">{{publish_time3}}</view>
+      </view> -->

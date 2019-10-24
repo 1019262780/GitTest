@@ -1,0 +1,66 @@
+<view class="lis"></view>
+<view class="list">
+  <view class="layout_horizontal">
+  <view bindtap="ziliaoTap">
+    <view class="size">主页</view>
+    <view class="right">></view>
+    </view>
+  </view>
+</view>
+<view class="lis"></view>
+<view class="list">
+  <view class="layout_horizontal">
+  <view bindtap="newsTap">
+    <view class="size">消息</view>
+    <view class="right">></view>
+    </view>
+  </view>
+</view>
+<view class="lis"></view>
+<view class="list">
+  <view class="layout_horizontal">
+  <view bindtap="changeTap">
+    <view class="size">更新日志</view>
+    <view class="right">></view>
+    </view>
+  </view>
+</view>
+<view class="lis"></view>
+<view class="list">
+  <view class="layout_horizontal">
+  <view bindtap="useTap">
+    <view class="size">使用说明</view>
+    <view class="right">></view>
+    </view>
+  </view>
+</view>
+<view class="lis"></view>
+<button class='btn' open-type="contact">
+<view class="list">
+  <view class="layout_horizontal">
+  <view class="size1">
+   在线咨询
+    <view class="right1">></view>
+    </view>
+  </view>
+</view>
+</button>
+<view class="lis"></view>
+<view class="list">
+  <view class="layout_horizontal">
+  <view bindtap="aboutUsTap">
+    <view class="size">关于优赛</view>
+    <view class="right">></view>
+    </view>
+  </view>
+</view>
+<view class="lis"></view>
+<view class="list">
+  <view class="layout_horizontal">
+  <view bindtap="zhangTap">
+    <view class="size">账号管理</view>
+    <view class="right">></view>
+    </view>
+  </view>
+</view>
+<view class="lis"></view>

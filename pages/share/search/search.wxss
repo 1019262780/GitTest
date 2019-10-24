@@ -1,0 +1,153 @@
+.page-box
+{
+  display: flex;
+  flex-direction: column;
+}
+.header-box
+{
+  position: fixed;
+  top: 0rpx;
+  background-color: white;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: 116rpx;
+  width: 750rpx;
+  padding: 20rpx 40rpx 40rpx 37rpx;
+  
+}
+.header-box>text{
+  margin-top: 8rpx;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  color: #666666;
+}
+.search-box{
+  
+  width: 595rpx;
+  height: 56rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 28rpx;
+  background-color: #e6e7e8;
+}
+.search-box image{
+  margin-left: 28rpx;
+  width: 22rpx;
+  height: 22rpx;
+}
+.search-box input{
+  margin-left: 18rpx;
+  height: 28rpx;
+  font-size: 20rpx;
+  color: #333333;
+  width: 500rpx;
+}
+.placeholder-class
+{
+  color: #999999;
+}
+.history-box{
+  margin-top: 116rpx;
+  display: flex;
+  flex-direction: column;
+}
+.history-text{
+  display: flex;
+  flex-direction: row;
+ 
+}
+.history-text .history-text-left{
+  margin-left: 37rpx;
+  font-size: 22rpx;
+  color: #999999;
+}
+.history-text .history-text-right{
+  margin-left: auto;
+  margin-right: 37rpx;
+  font-size: 22rpx;
+  color: #999999;
+}
+.history-list
+{
+  height: 56rpx;
+}
+.history-list .row-box{
+  display:inline-block; 
+  margin-top: 20rpx;
+  padding: 12rpx;
+  border-radius: 8rpx;
+  margin-left: 33rpx;
+  background-color: #f4f4f4;
+  font-size: 24rpx;
+  color: #3a3a3a;
+}
+.search-result-box
+{
+  margin-top: 116rpx;
+  padding: 0rpx 37rpx;
+  display: flex;
+  flex-direction: column;
+}
+ .none-product
+{
+  font-size: 22rpx;
+  color: #999999;
+}
+.single-result-box>image
+{
+  width: 676rpx;
+  height: 447rpx;
+  border-radius: 12rpx;
+  background-color: #aaa;
+}
+.single-result-box .container-box
+{
+  height: 110rpx;
+  overflow: hidden;
+  margin-top: 15rpx;
+  border-bottom: 5px solid #e6e7e8
+}
+.container-box{
+  display: flex;
+  flex-direction: row;
+}
+.container-box .name
+{
+  font-size: 32rpx;
+  color: blue;
+  font-weight: 700;
+  
+}
+.container-box .desc{
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #333333;
+  width: 500rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+}
+.single-result-box .recommend
+{
+  margin-top: auto;
+  margin-bottom: 20rpx;
+  margin-left:  auto;
+  margin-right:  0rpx;
+  width:  112rpx;
+  height: 56rpx;
+  border-radius: 28rpx;
+  background-color: #cda069;
+  text-align: center;
+
+}
+.recommend text{
+  color: white;
+  font-size: 26rpx;
+}
+.hr{
+
+}

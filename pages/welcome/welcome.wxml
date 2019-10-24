@@ -1,0 +1,8 @@
+<!-- pages/welcome/welcome -->
+<view class='container'>
+  <image class='avatar' src="../../images/tou.jpeg"></image>
+  <text class="motto">Hello</text>
+  <view class="journey-container">
+  <text class="journey">开始</text>
+  </view>
+</view>

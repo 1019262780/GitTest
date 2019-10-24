@@ -1,0 +1,2 @@
+<view style="background-image:{{viewBg}};color:white;height:100px;">我是view标签</view>
+<button type="default" bindtap="changeBg">点击我修改view标签的背景颜色</button>

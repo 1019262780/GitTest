@@ -1,0 +1,105 @@
+@import "history-t/history-t.wxss";
+@import "follow-n/follow-n.wxss";
+
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navbar {
+  flex: none;
+  display: flex;
+  color: #a1a4d6;
+  font-size: 13px;
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-image: url("http://106.12.109.65/yousai_img/public.png");
+}
+
+.navbar .item {
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.navbar .item.active {
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.navbar .item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #020f45;
+}
+
+.newbanner {
+  margin-top: -80px;
+  width: 100%;
+}
+
+.list_pic2 {
+  width: 96%;
+  margin-left: 2%;
+  height: 200px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.list_img1 {
+  position: relative;
+}
+
+.title {
+  width: 96%;
+  position: absolute;
+  left: 10px;
+  top: 150px;
+  right: 0;
+  bottom: 0;
+  color: white;
+  margin: auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.look_img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  right: 0;
+  bottom: 0;
+}
+
+.look_img1 {
+  width: 120px;
+  height: 25px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  right: 0;
+  bottom: 0;
+}
+
+.tip {
+  position: absolute;
+  left: 60px;
+  top: 15px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 10px;
+  opacity: 0.8;
+}

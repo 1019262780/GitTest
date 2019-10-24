@@ -1,0 +1,87 @@
+<view class='back'>
+  <view class="header">
+    <image src="http://106.12.109.65/yousai_img/new.png" class="new"></image>
+    <view class="headertext">
+      <text>优赛</text>
+    </view>
+    <view bindtap="searchtap">
+    <image src="../../images/icon/search.png" class="search"></image>
+    </view>
+    <import src="../../components/filterbar/filterbar.wxml" />
+    <!--这里添加模板：横向导航栏  -->
+    <template is="filterbar" data="{{ ...$wux.filterbar }}" /> 
+  </view>
+</view>
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="*" bindtap="navbarTap">{{item}}</text>
+</view>
+<!-- 导航内容 -->
+<view hidden="{{currentTab!==0}}">
+  <view wx:for="{{shareDynamic}}" wx:for-item="item" wx:for-index="idx" wx:key="*"data-share-id="{{item.shareId}}" >
+  <view class="lis">
+    <view class="list">
+    <view bindtap="shareTap"data-share-id="{{item.shareId}}">
+      <view class="layout_horizontal">
+        <view>
+          <image src="{{item.img}}" class="img1"></image>
+        </view>
+        <view class="layout_vertical">
+          <view class="layout_horizontal">
+            <view class="list-title">{{item.title}}</view>
+            <view class="list-title1">{{item.name}}</view>
+            <view>
+              <image src="{{item.image}}" class="img2"></image>
+            </view>
+          </view>
+          <view class="list-title2">{{item.tit1}}</view>
+        </view>
+      </view>
+      <view class="layout_horizontal">
+        <view class="tip1"><text class="tip">{{item.tip}}</text>{{item.lang}}</view>
+      </view>
+      </view>
+      <view class="layout_horizontal">
+      <view class='shareicon' bindtap="onShareAppMessage">
+        <button class="btn"id="shareBtn" open-type="share"  hover-class='none'>
+          <image src="{{item.image1}}"class="img3"></image>
+          转发
+          </button>
+        </view>
+      <view class="shareicon"><image src="{{item.image2}}" class="img3"></image>评论</view>
+      <view class='shareicon' bindtap='onCollectionTap' data-share-id="{{item.shareId}}">
+          <image wx:if="{{item.collectionStatus}}" src='{{item.image55}}' class="img3"></image>
+          <image wx:else src='{{item.image3}}' class="img3"></image>收藏</view>
+      </view>
+    </view>
+  </view>
+  </view>
+</view>
+<view hidden="{{currentTab!==1}}">
+<view wx:for="{{shareDynamic}}" wx:for-item="item" wx:for-index="idx" wx:key="*">
+  <view class="lis">
+    <view class="list">
+      <view class="layout_horizontal">
+        <view>
+          <image src="{{item.img}}" class="img1"></image>
+        </view>
+        <view class="layout_vertical">
+          <view class="layout_horizontal">
+            <view class="list-title">{{item.title}}</view>
+            <view class="list-title1">{{item.name}}</view>
+          </view>
+          <view class="list-title2">{{item.tit1}}</view>
+        </view>
+      </view>
+      <view class="layout_horizontal">
+        <view class="tip1"><text class="tip">{{item.tip}}</text>{{item.lang}}</view>
+      </view>
+      
+    </view>
+  </view>
+  </view>
+</view>
+
+<!-- <view class="navbar">
+<view class="nav">动态</view>
+<view>关注</view>
+</view> -->

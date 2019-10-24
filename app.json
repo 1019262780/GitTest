@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/news/news",
+    "pages/news-three/news-three",
+    "pages/person/person",
+    "pages/welcome/welcome",
+    "pages/share/share",
+    "pages/index/detail/detail",
+    "pages/share/shareDynamic/shareDynamic",
+    "pages/share/search/search",
+    "pages/index/search/search",
+    "pages/collected/collected",
+    "pages/personal/personal",
+    "pages/person/grade/grade",
+    "pages/person/setting/setting",
+    "pages/person/aboutUs/aboutUs",
+    "pages/person/news/news",
+    "pages/person/use/use",
+    "pages/person/change/change",
+    "pages/person/zhanghao/zhanghao"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "优赛",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "selectedColor": "#64ABE5",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "赛事直通",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home_press.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "资讯",
+        "iconPath": "images/icon/news.png",
+        "selectedIconPath": "images/icon/news_press.png"
+      },
+      {
+        "pagePath": "pages/share/share",
+        "text": "分享圈",
+        "iconPath": "images/icon/share.png",
+        "selectedIconPath": "images/icon/share_press.png"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "text": "我",
+        "iconPath": "images/icon/person.png",
+        "selectedIconPath": "images/icon/person_press.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}
